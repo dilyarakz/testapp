@@ -1,38 +1,138 @@
-.App {
+.App{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.pagination{
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination a {
+  padding: 10px;
+  border: none;
+  color: #14A76C;
+}
+
+.pagination__link{
+  font-weight: bold;
+}
+
+.pagination__link--active a{
+  color: #14A76C;
+  background: #272727;
+}
+
+.pagination__link--disabled a {
+  color: #272727;
+
+}
+
+#header-icon{
+  background: none;
+  padding: 1.5rem 3rem;
+}
+
+#header-icon:hover, .header-fav-box-link:hover{
+  /* background-color: #FFE400; */
+  color: #FFE400;
+  fill: #FFE400;
+}
+
+#movieCard {
+  background-color: #272727
+}
+
+#heartIcon:hover{
+  fill: #FFE400
+}
+#heartIcon{
+  fill: #14A76C;
+}
+
+#movieCard:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.header{
+  background:  #272727;
+  color: #14A76C;
+  display: flex;
+  padding: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-fav-box-link{
+  display: flex;
+  width: 150px;
+  flex-direction: row;
+  font-size: 1.5rem;
+  align-items: center;
+  font-weight: bold;
+}
+
+.card-genre-li{ 
+  display: inline; 
+  font-size: 0.8rem; 
+  margin-left: 0.5rem 
+}
+
+.card-title{
+  color: #FFE400;
+}
+
+.card-addfav-btn{
+  color: green;
+  width: 100%;
+}
+
+.card-info-container{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+
+
+.pagination-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.details-main-container{
+  display: flex;
+  background-color: white;
+  color: black;
+}
+
+#details-main-img-container{
+  background-color: pink;
+}
+
+.details-title{
+  color:#FFE400;
+  font-weight: bold;
+}
+
+.details-info{
+  text-align: left;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.details-release-date{
+  color: grey;
+  font-weight: normal;
 }
